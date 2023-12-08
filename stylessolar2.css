@@ -31,19 +31,7 @@ body {
     animation: rotateMoon linear infinite, orbitMoon linear infinite;
 }
 
-/* .planet {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -20px;
-    margin-left: -20px;
-    border: 1px solid #ccc;
-    z-index: 1;
-    animation: rotatePlanet linear infinite;
-} */
+
 
 .mercury { width: 40px;
     height: 40px;
