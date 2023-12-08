@@ -1,0 +1,201 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+.sun {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+    z-index: 2;
+}
+
+.moon {
+    width: 20px;
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    margin-top: -10px;
+    margin-left: -10px;
+    z-index: 1;
+    animation: rotateMoon linear infinite, orbitMoon linear infinite;
+}
+
+/* .planet {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -20px;
+    margin-left: -20px;
+    border: 1px solid #ccc;
+    z-index: 1;
+    animation: rotatePlanet linear infinite;
+} */
+
+.mercury { width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -20px;
+    margin-left: -20px;
+    border: 1px solid #ccc;
+    z-index: 1;
+    animation: rotatePlanet linear infinite;
+    background-color: #b3b3b3;
+    animation-duration: 2s;
+}
+
+.venus {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -20px;
+    margin-left: -20px;
+    border: 1px solid #ccc;
+    z-index: 1;
+    animation: rotatePlanet linear infinite;
+    background-color: #ffcc66;
+    animation-duration: 4s;
+}
+
+.earth {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -20px;
+    margin-left: -20px;
+    border: 1px solid #ccc;
+    z-index: 1;
+    animation: rotatePlanet linear infinite;
+    background-color: #3399ff;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+}
+
+.mars {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -20px;
+    margin-left: -20px;
+    border: 1px solid #ccc;
+    z-index: 1;
+    animation: rotatePlanet linear infinite;
+    background-color: #ff6666;
+    animation-duration: 8s;
+}
+
+.jupiter {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -20px;
+    margin-left: -20px;
+    border: 1px solid #ccc;
+    z-index: 1;
+    animation: rotatePlanet linear infinite;
+    background-color: #ffcc00;
+    animation-duration: 12s;
+}
+
+.saturn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -20px;
+    margin-left: -20px;
+    border: 1px solid #ccc;
+    z-index: 1;
+    animation: rotatePlanet linear infinite;
+    background-color: #ff9900;
+    animation-duration: 16s;
+}
+
+.uranus {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -20px;
+    margin-left: -20px;
+    border: 1px solid #ccc;
+    z-index: 1;
+    animation: rotatePlanet linear infinite;
+    background-color: #66ccff;
+    animation-duration: 20s;
+}
+
+.neptune {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -20px;
+    margin-left: -20px;
+    border: 1px solid #ccc;
+    z-index: 1;
+    animation: rotatePlanet linear infinite;
+    background-color: #3366ff;
+    animation-duration: 24s;
+}
+
+@keyframes rotatePlanet {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+@keyframes rotateMoon {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+@keyframes orbitMoon {
+    from {
+        transform: translateX(20vw) translateY(0);
+    }
+    to {
+        transform: translateX(-20vw) translateY(0);
+    }
+}
